@@ -30,8 +30,10 @@ jobs:
         run: |
           docker image ls $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
 
-      - name: Push de l’image Docker
+      - name: Push des l’image Docker
         run: |
+    
+
           docker push $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
 
       - name: Scan Trivy
